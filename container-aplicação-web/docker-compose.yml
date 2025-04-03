@@ -1,0 +1,9 @@
+name: 'web-app-dio'
+services:
+  apache:
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./site:/usr/local/apache2/htdocs
+    
